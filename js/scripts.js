@@ -31,3 +31,19 @@ Pizza.prototype.toppingCost = function() {
 })
   return this.totalCost;
 };
+
+
+
+
+function handleZaOrder(e){
+  e.preventDefault();
+  document.getElementById("pizza-form").setAttribute("class", "hidden");
+  document.querySelector("div#receipt").removeAttribute("class");
+  let za = new Pizza()
+  const pizzaSize = za.size;
+};
+
+window.addEventListener("load", function() {
+  
+  document.querySelector("form#pizza-form").addEventListener("submit", handleZaOrder);
+})

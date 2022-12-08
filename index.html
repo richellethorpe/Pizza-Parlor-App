@@ -17,21 +17,21 @@
           <legend class="col-form-label col-sm-2 pt-0">Pizza Size</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="size-small" id="size-small">
-              <label class="form-check-label" for="size-small">
-                Small, 12inch
+              <input class="form-check-input" type="radio" name="za-size" id="size-small">
+              <label class="form-check-label" for="za-size">
+                Small, 12inch $10
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="size-medium" id="size-medium" checked>
-              <label class="form-check-label" for="size-medium">
-                Medium, 16inch
+              <input class="form-check-input" type="radio" name="za-size" id="size-medium" checked>
+              <label class="form-check-label" for="za-size">
+                Medium, 16inch $14
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="size-large" id="size-large">
-              <label class="form-check-label" for="size-large">
-                Large, 20inch
+              <input class="form-check-input" type="radio" name="za-size" id="size-large">
+              <label class="form-check-label" for="za-size">
+                Large, 20inch $16
               </label>
             </div>
           </div>
@@ -43,77 +43,75 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="marshmallows">
             <label class="form-check-label" for="marshmallows">
-              Marshmallows
+              Marshmallows +$1
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="pineapple">
             <label class="form-check-label" for="pineapple">
-              Pineapple 
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="pineapple">
-            <label class="form-check-label" for="pineapple">
-              Pineapple 
+              Pineapple +$1
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="chocolate-fudge">
             <label class="form-check-label" for="chocolate-fudge">
-              Chocolate Fudge
+              Chocolate Fudge +$1
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="olives">
             <label class="form-check-label" for="olives">
-              Olives
+              Olives +$1
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="jalapenos">
             <label class="form-check-label" for="jalapenos">
-              Jalapenos 
+              Jalapenos +$1
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="anchovies">
             <label class="form-check-label" for="anchovies">
-              Anchovies 
+              Anchovies +$2
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="pepperoni">
             <label class="form-check-label" for="pepperoni">
-              Pepperoni 
+              Pepperoni +$2
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="clams">
             <label class="form-check-label" for="clams">
-              Clams 
+              Clams +$2
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="smoked-ham">
             <label class="form-check-label" for="smoked-ham">
-              Smoked Ham 
+              Smoked Ham +$2
             </label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="slime">
             <label class="form-check-label" for="slime">
-              Slime 
+              Slime +$2
             </label>
           </div>
         </div>
       </div>
       <div class="form-group row">
         <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Submit Order</button>
+          <button id="submitBtn" type="submit" class="btn btn-primary">Submit Order</button>
         </div>
       </div>
     </form>
+    <div id="receipt" class="hidden">
+      <h1>Thank you for your totally radical order!</h1>
+      <h2>You ordered a <span id="size-selection"></span> Pizza</h2>
+    </div>
   </div>
 </body>
 </html>
