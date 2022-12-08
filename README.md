@@ -61,7 +61,7 @@ newZa.toppingCost();
 Expected Output: 4
 
 Describe: Pizza.prototype.toppingCost()
-Test: "It should add $2 to total cost if 2 $2 toppings are selected in addition to the $1 toppings that are already selected"
+Test: "It should add $2 to total cost if 2 $2 toppings are selected in addition to the $1 toppings that are already selected."
 Code: let newZa = new Pizza(["marshmallows", "pineapple", "anchovies", "slime"],"");
 newZa.toppingCost();
 Expected Output: 6
