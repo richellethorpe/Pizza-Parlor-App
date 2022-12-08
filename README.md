@@ -43,17 +43,22 @@ newZa.sizeCost();
 Expected Output: 14
 
 Describe: Pizza.prototype.toppingCost()
-Test: "It should return $1 to total cost if a single $1 topping is selected
+Test: "It should return $1 to total cost if a single $1 topping is selected"
 Code: let newZa = new Pizza(["marshmallows","");
 newZa.toppingCost();
 Expected Output: 1
 
 Describe: Pizza.prototype.toppingCost()
-Test: "It should return $2 to total cost if two $1 toppings are selected
+Test: "It should return $2 to total cost if two $1 toppings are selected"
 Code: let newZa = new Pizza(["marshmallows", "pineapple"],"");
 newZa.toppingCost();
 Expected Output: 2
 
+Describe: Pizza.prototype.toppingCost()
+Test: "It should add $2 to total cost if a $2 topping is selected in addition to the $1 toppings that are already selected"
+Code: let newZa = new Pizza(["marshmallows", "pineapple", "anchovies"],"");
+newZa.toppingCost();
+Expected Output: 4
 
 
 
