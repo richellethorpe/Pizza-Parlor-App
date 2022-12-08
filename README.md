@@ -30,6 +30,13 @@ Code: let newZa = new Pizza(["anchovies", "pepperoni"],"small");
 newZa.sizeCost();
 Expected Output: 10
 
+Describe: Pizza.prototype.sizeCost()
+Test: "It should return a total cost of $12 if "medium" is selected for pizza size"
+Code: let newZa = new Pizza(["anchovies", "pepperoni"],"medium");
+newZa.sizeCost();
+Expected Output: 12
+
+
 ## Known bugs
 
 ## License information
