@@ -16,3 +16,13 @@ Pizza.prototype.sizeCost = function(){
   }
   return this.totalCost;
 } 
+
+//ninja turtle pizza toppings $1 "marshmallows" "pineapple" "chocolate fudge" "olives" "jalepenos"
+//ninja turtle pizza toppings $2 "anchovies" "pepperoni" "clams" "smoked ham" "slime"
+
+Pizza.prototype.toppingCost = function() {
+  if (this.toppings === "marshmallows"){
+    this.totalCost += 1;
+  }
+  return this.totalCost;
+}

@@ -26,21 +26,28 @@ Expected Output: Pizza {toppings: ['anchovies', 'pepperoni'], size: 'medium'}
 
 Describe: Pizza.prototype.sizeCost()
 Test: "It should return a total cost of $10 if "small" is selected for pizza size"
-Code: let newZa = new Pizza(["anchovies", "pepperoni"],"small");
+Code: let newZa = new Pizza("","small");
 newZa.sizeCost();
 Expected Output: 10
 
 Describe: Pizza.prototype.sizeCost()
 Test: "It should return a total cost of $12 if "medium" is selected for pizza size"
-Code: let newZa = new Pizza(["anchovies", "pepperoni"],"medium");
+Code: let newZa = new Pizza("","medium");
 newZa.sizeCost();
 Expected Output: 12
 
 Describe: Pizza.prototype.sizeCost()
 Test: "It should return a total cost of $12 if "large" is selected for pizza size"
-Code: let newZa = new Pizza(["anchovies", "pepperoni"],"large");
+Code: let newZa = new Pizza(["","large");
 newZa.sizeCost();
 Expected Output: 14
+
+Describe: Pizza.prototype.toppingCost()
+Test: "It should return $1 to total cost if a single $1 topping is selected
+Code: let newZa = new Pizza(["marshmallows","");
+newZa.toppingCost();
+Expected Output: 1
+
 
 
 
