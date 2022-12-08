@@ -24,7 +24,11 @@ Test: "It should return an object with the keys: (toppings, size)
 Code: let newZa = new Pizza(["anchovies", "pepperoni"],"medium");
 Expected Output: Pizza {toppings: ['anchovies', 'pepperoni'], size: 'medium'}
 
-/
+Describe: Pizza.prototype.sizeCost()
+Test: "It should return a total cost of $10 if "small" is selected for pizza size"
+Code: let newZa = new Pizza(["anchovies", "pepperoni"],"small");
+newZa.sizeCost();
+Expected Output: 10
 
 ## Known bugs
 
