@@ -24,7 +24,7 @@ Test: "It should return an object with the keys: (toppings, size)
 Code: let newZa = new Pizza(["anchovies", "pepperoni"],"medium");
 Expected Output: Pizza {toppings: ['anchovies', 'pepperoni'], size: 'medium'}
 
-
+/
 
 ## Known bugs
 
