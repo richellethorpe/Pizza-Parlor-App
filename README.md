@@ -21,8 +21,10 @@ This is an application that allows the user to select options to create a custom
 
 Describe: Pizza()
 Test: "It should return an object with the keys: (toppings, size)
-Code: newPizza = new Pizza ("spinach", "large");
-Expected Output: Pizza {toppings: 'spinach', size: 'large'}
+Code: let newZa = new Pizza(["anchovies", "pepperoni"],"medium");
+Expected Output: Pizza {toppings: ['anchovies', 'pepperoni'], size: 'medium'}
+
+
 
 ## Known bugs
 
