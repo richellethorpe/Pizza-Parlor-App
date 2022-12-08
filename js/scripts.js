@@ -17,13 +17,13 @@ Pizza.prototype.sizeCost = function(){
   return this.totalCost;
 } 
 
-//ninja turtle pizza toppings $1 "marshmallows" "pineapple" "chocolate-fudge" "olives" "jalepenos"
+//ninja turtle pizza toppings $1 "marshmallows" "pineapple" "chocolate-fudge" "olives" "jalapenos"
 //ninja turtle pizza toppings $2 "anchovies" "pepperoni" "clams" "smoked-ham" "slime"
 
 Pizza.prototype.toppingCost = function() {
   let toppingsArray = this.toppings;
   toppingsArray.forEach(topper => {
-  if ((topper === "marshmallows") || (topper === "pineapple")|| (topper === "chocolate-fudge")|| (topper === "olives")|| (topper === "jalepenos")){
+  if ((topper === "marshmallows") || (topper === "pineapple")|| (topper === "chocolate-fudge")|| (topper === "olives")|| (topper === "jalapenos")){
     this.totalCost += 1;
   }else if ((topper === "anchovies") || (topper === "pepperoni")|| (topper === "clams")|| (topper === "smoked-ham")|| (topper === "slime")){
     this.totalCost +=2;

@@ -11,7 +11,7 @@
     <div class="jumbotron">
       <h1>Michelangolo's Pizza Palace</h1>
     </div>
-    <form>
+    <form id="pizza-form">
       <fieldset class="form-group">
         <div class="row">
           <legend class="col-form-label col-sm-2 pt-0">Pizza Size</legend>
@@ -28,7 +28,7 @@
                 Medium, 16inch
               </label>
             </div>
-            <div class="form-check disabled">
+            <div class="form-check">
               <input class="form-check-input" type="radio" name="size-large" id="size-large">
               <label class="form-check-label" for="size-large">
                 Large, 20inch
@@ -38,19 +38,79 @@
         </div>
       </fieldset>
       <div class="form-group row">
-        <div class="col-sm-2">Checkbox</div>
+        <div class="col-sm-2">Topping Options</div>
         <div class="col-sm-10">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">
-              Example checkbox
+            <input class="form-check-input" type="checkbox" id="marshmallows">
+            <label class="form-check-label" for="marshmallows">
+              Marshmallows
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="pineapple">
+            <label class="form-check-label" for="pineapple">
+              Pineapple 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="pineapple">
+            <label class="form-check-label" for="pineapple">
+              Pineapple 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="chocolate-fudge">
+            <label class="form-check-label" for="chocolate-fudge">
+              Chocolate Fudge
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="olives">
+            <label class="form-check-label" for="olives">
+              Olives
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="jalapenos">
+            <label class="form-check-label" for="jalapenos">
+              Jalapenos 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="anchovies">
+            <label class="form-check-label" for="anchovies">
+              Anchovies 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="pepperoni">
+            <label class="form-check-label" for="pepperoni">
+              Pepperoni 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="clams">
+            <label class="form-check-label" for="clams">
+              Clams 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="smoked-ham">
+            <label class="form-check-label" for="smoked-ham">
+              Smoked Ham 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="slime">
+            <label class="form-check-label" for="slime">
+              Slime 
             </label>
           </div>
         </div>
       </div>
       <div class="form-group row">
         <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary">Submit Order</button>
         </div>
       </div>
     </form>
