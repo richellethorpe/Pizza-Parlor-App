@@ -48,6 +48,13 @@ Code: let newZa = new Pizza(["marshmallows","");
 newZa.toppingCost();
 Expected Output: 1
 
+Describe: Pizza.prototype.toppingCost()
+Test: "It should return $2 to total cost if two $1 toppings are selected
+Code: let newZa = new Pizza(["marshmallows", "pineapple"],"");
+newZa.toppingCost();
+Expected Output: 2
+
+
 
 
 

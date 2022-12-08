@@ -21,5 +21,8 @@ Pizza.prototype.sizeCost = function(){
 //ninja turtle pizza toppings $2 "anchovies" "pepperoni" "clams" "smoked ham" "slime"
 
 Pizza.prototype.toppingCost = function() {
-
+  if (this.toppings === "marshmallows"){
+    this.totalCost += 1;
+  }
+  return this.totalCost;
 }
