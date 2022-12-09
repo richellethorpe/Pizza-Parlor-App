@@ -1,6 +1,6 @@
 //Business logic
 
-function Pizza(toppings, size){
+function Pizza(size, toppings){
   this.toppings = toppings;
   this.size = size;
   this.totalCost = 0;
@@ -39,8 +39,16 @@ function handleZaOrder(e){
   e.preventDefault();
   document.getElementById("pizza-form").setAttribute("class", "hidden");
   document.querySelector("div#receipt").removeAttribute("class");
-  let za = new Pizza()
-  const pizzaSize = za.size;
+  const sizeSelection = document.querySelector("input[name='za-size']:checked").value;  
+  const toppingSelections = document.querySelectorAll("input[name=za-topping]:checked");
+  
+  const toppingArray = Array.from(toppingSelections);
+
+ console.log(toppingArray);
+ console.log(toppingArray[0].value)
+  let za = new Pizza(sizeSelection, toppingSelections);
+  console.log(za);
+
 };
 
 window.addEventListener("load", function() {
