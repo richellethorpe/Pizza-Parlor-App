@@ -17,19 +17,19 @@
           <legend class="col-form-label col-sm-2 pt-0">Pizza Size</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="za-size" value="small">
+              <input class="form-check-input" type="radio" name="za-size" value="Small">
               <label class="form-check-label" for="za-size">
                 Small, 12inch $10
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="za-size" value="medium" checked>
+              <input class="form-check-input" type="radio" name="za-size" value="Medium" checked>
               <label class="form-check-label" for="za-size">
                 Medium, 16inch $14
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="za-size" value="large">
+              <input class="form-check-input" type="radio" name="za-size" value="Large">
               <label class="form-check-label" for="za-size">
                 Large, 20inch $16
               </label>
@@ -41,61 +41,61 @@
         <div class="col-sm-2">Topping Options</div>
         <div class="col-sm-10">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="marshmallows">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Marshmallows">
             <label class="form-check-label" for="marshmallows">
               Marshmallows +$1
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="pineapple">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Pineapple">
             <label class="form-check-label" for="pineapple">
               Pineapple +$1
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="chocolate-fudge">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Chocolate">
             <label class="form-check-label" for="chocolate-fudge">
               Chocolate Fudge +$1
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="olives">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Olives">
             <label class="form-check-label" for="olives">
               Olives +$1
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="jalapenos">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Jalapenos">
             <label class="form-check-label" for="jalapenos">
               Jalapenos +$1
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="anchovies">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Anchovies">
             <label class="form-check-label" for="anchovies">
               Anchovies +$2
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="pepperoni">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Pepperoni">
             <label class="form-check-label" for="pepperoni">
               Pepperoni +$2
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="clams">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Clams">
             <label class="form-check-label" for="clams">
               Clams +$2
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="smoked-ham">
-            <label class="form-check-label" for="smoked-ham">
-              Smoked Ham +$2
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Ham">
+            <label class="form-check-label" for="ham">
+              Ham +$2
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" name ="za-topping" value="slime">
+            <input class="form-check-input" type="checkbox" name ="za-topping" value="Slime">
             <label class="form-check-label" for="slime">
               Slime +$2
             </label>
@@ -111,8 +111,9 @@
     <div id="receipt" class="hidden">
       <h1>Thank you for your totally radical order!</h1>
       <h2>RECEIPT:</h2>
-      <h3><span id="size-selection"></span> cheese pizza</h3>
+      
       <ul id="printToppings">
+      <li>Pizza Size: <span id="size-selection"></span></li>
         
       </ul>
       <h2> Total: $<span id="totalCost"></span></h2>
