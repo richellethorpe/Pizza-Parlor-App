@@ -41,14 +41,29 @@ function handleZaOrder(e){
   document.querySelector("div#receipt").removeAttribute("class");
   const sizeSelection = document.querySelector("input[name='za-size']:checked").value;  
   const toppingSelections = document.querySelectorAll("input[name=za-topping]:checked");
-  
-  const toppingArray = Array.from(toppingSelections);
+  console.log(toppingSelections);
+  const toppingInput = Array.from(toppingSelections);
 
- console.log(toppingArray);
- console.log(toppingArray[0].value)
-  let za = new Pizza(sizeSelection, toppingSelections);
+  let toppingsArray = [];
+  toppingInput.forEach (element => {
+    toppingsArray.push(element.value);
+  })
+  
+  let za = new Pizza(sizeSelection, toppingsArray);
+  console.log(za);
+  za.sizeCost();
+  za.toppingCost();
   console.log(za);
 
+  document.getElementById("size-selection").innerText = sizeSelection;
+  toppingsArray.forEach(element=> {
+    const ul = document.querySelector("ul#printToppings");
+    const li = document.createElement("li")
+    li.append(element);
+    ul.append(li);
+
+  document.getElementById("totalCost").innerText = za.totalCost;  
+  })
 };
 
 window.addEventListener("load", function() {
