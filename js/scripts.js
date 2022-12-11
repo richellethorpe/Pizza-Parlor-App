@@ -75,8 +75,13 @@ function handleZaOrder(e){
 
 };
 
+function handleNewOrder () {
+  document.getElementById("pizza-form").removeAttribute("class", "hidden");
+  document.querySelector("div#receipt").setAttribute("class", "hidden");
+}
+
 window.addEventListener("load", function() {
-  
+  this.document.getElementById("newOrder").addEventListener("click", handleNewOrder);
   document.querySelector("form#pizza-form").addEventListener("submit", handleZaOrder);
 })
 
