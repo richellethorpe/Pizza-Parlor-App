@@ -7,18 +7,16 @@ function Pizza(size, toppings){
 }
 
 Pizza.prototype.sizeCost = function(){
-  if (this.size === "Small"){
+  if (this.size === "Small   +$10"){
    this.totalCost += 10
-  }else if (this.size === "Medium"){
+  }else if (this.size === "Medium   +$12"){
     this.totalCost +=12;
-  }else if (this.size === "Large"){
+  }else if (this.size === "Large   +$14"){
     this.totalCost +=14;
   }
   return this.totalCost;
 } 
 
-//ninja turtle pizza toppings $1 "marshmallows" "pineapple" "chocolate" "olives" "jalapenos"
-//ninja turtle pizza toppings $2 "anchovies" "pepperoni" "clams" "ham" "slime"
 
 Pizza.prototype.toppingCost = function() {
   let toppingsArray = this.toppings;
@@ -31,9 +29,6 @@ Pizza.prototype.toppingCost = function() {
 })
   return this.totalCost;
 };
-
-
-
 
 function handleZaOrder(e){
   e.preventDefault();
@@ -49,25 +44,39 @@ function handleZaOrder(e){
   })
   
   let za = new Pizza(sizeSelection, toppingsArray);
-  console.log(za);
   za.sizeCost();
   za.toppingCost();
-  console.log(za);
+ 
+  document.getElementById("total-cost").innerText = ("$" + za.totalCost);
 
-  document.getElementById("size-selection").innerText = sizeSelection;
-  toppingsArray.forEach(element=> {
-    const ul = document.querySelector("ul#printToppings");
-    const li = document.createElement("li")
-    li.append(element);
-    ul.append(li);
+
 
    
-  })
+  toppingsArray.forEach(element=> {
+    const tbody = document.getElementById("toppingSelection");
+    const tr = document.createElement("tr")
+    tr.append(element);
+    if ((element === "Marshmallows") || (element === "Pineapple")|| (element === "Chocolate")|| (element === "Olives")|| (element === "Jalapenos")){
+      tbody.append(tr);
+      const td = document.createElement("td");
+      td.setAttribute("class","alignright")
+      td.append (" +$1")
+      tr.append(td);
 
-  document.getElementById("totalCost").innerText = za.totalCost; 
+    }else if ((element === "Anchovies") || (element === "Pepperoni")|| (element === "Clams")|| (element === "Ham")|| (element === "Slime")){
+      tbody.append(tr);
+      const td = document.createElement("td");
+      td.append (" +$2")
+      tr.append(td);
+    }
+   
+  })
+  document.getElementById("size-selection").innerText = sizeSelection;
+
 };
 
 window.addEventListener("load", function() {
   
   document.querySelector("form#pizza-form").addEventListener("submit", handleZaOrder);
 })
+
