@@ -61,7 +61,6 @@ function handleZaOrder(e){
     }
   })
   document.getElementById("size-selection").innerText = sizeSelection;
-
 };
 
 function handleNewOrder () {
@@ -69,8 +68,6 @@ function handleNewOrder () {
   document.querySelector("div#receipt").setAttribute("class", "hidden");
   document.getElementById("pizza-form").reset();
   }
-
-
 
 window.addEventListener("load", function() {
   this.document.getElementById("newOrder").addEventListener("click", handleNewOrder);
