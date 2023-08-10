@@ -4,12 +4,12 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Ninja Turtle Pizza Parlor</title>
+  <title>Michelangelo's Pizza Palace</title>
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Michelangolo's Pizza Palace</h1>
+    <div class="header">
+      <img src="./css/img/checkered1.png">
     </div>
     <form id="pizza-form">
       <fieldset class="form-group">
@@ -105,77 +105,79 @@
         </div>
       </div>
       <div class="form-group row">
-        <div class="col-sm-10">
+        <div class="col-sm-10 aligncenter">
           <button id="submitBtn" type="submit" class="btn btn-primary">Submit Order</button>
         </div>
       </div>
     </form>
     <div id="receipt" class="hidden">
    
-    <table class="body-wrap">
-      <tbody><tr>
-          <td></td>
-          <td class="container" width="600">
-              <div class="content">
-                  <table class="main" width="100%" cellpadding="0" cellspacing="0">
-                      <tbody><tr>
-                          <td class="content-wrap aligncenter">
-                              <table width="100%" cellpadding="0" cellspacing="0">
-                                  <tbody><tr>
-                                      <td class="content-block">
-                                          <h2>Thank you for your totally radical order!</h2>
-                                      </td>
-                                  </tr>
+      <table class="body-wrap">
+          <tbody><tr>
+            <td></td>
+            <td class="container" width="600">
+                <div class="content">
+                    <table class="main" width="100%" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td class="content-wrap aligncenter">
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody><tr>
+                                        <td class="content-block">
+                                            <h2>Thank you for your totally radical order!</h2>
+                                        </td>
+                                    </tr>
 
-                                  <tr>
-                                      <td class="content-block">
-                                          <table class="invoice">
-                                              <tbody>
-                                              <tr>
-                                                  <td>
-                                                      <table class="invoice-items" cellpadding="0" cellspacing="0">
-                                                        <tr>
-                                                          <td>Pizza Size: <span id="size-selection"></span></td>
-                                                          <td id= "sizeInput" class="alignright"></td>
-                                                        </tr>  
-                                                        <tbody>
-                                                            <div id="toppingSelection">
+                                    <tr>
+                                        <td class="content-block">
+                                            <table class="invoice">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <table class="invoice-items" cellpadding="0" cellspacing="0">
+                                                          <tr>
+                                                            <td>Pizza Size: <span id="size-selection"></span></td>
+                                                            <td id= "sizeInput" class="alignright"></td>
+                                                          </tr>  
+                                                          <tbody>
+                                                              <div id="toppingSelection">
 
-                                                            </div>
-                                                          <tr class="total">
-                                                              <td class="alignleft" width="80%">Total</td>
-                                                              <td id="total-cost" class="alignleft"></td>
-                                                          </tr>
-                                                      </tbody></table>
-                                                  </td>
-                                              </tr>
-                                          </tbody></table>
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td class="content-block">
-                                          Located at 122 & 1/8th, New York, New York
-                                      </td>
-                                  </tr>
-                              </tbody></table>
-                          </td>
-                      </tr>
-                  </tbody></table>
-                  <div class="footer">
-                      <table width="100%">
-                          <tbody><tr>
-                              <td class="aligncenter content-block">Questions? Email <a href="mailto:">support@turtletime.corp</a></td>
-                          </tr>
-                      </tbody></table>
-                      <div class="col-sm-10">
-                        <button id="newOrder" type="button" class="btn btn-primary">New Order</button>
-                      </div>
-                  </div></div>
-          </td>
-          <td></td>
-      </tr>
-  </tbody></table>
-    </div>
-  </div> 
-</body>
+                                                              </div>
+                                                            <tr class="total">
+                                                                <td class="alignleft" width="80%">Total</td>
+                                                                <td id="total-cost" class="alignleft"></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                    </td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-block">
+                                            Located at 122 & 1/8th, New York, New York
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div class="footer">
+                        <table width="100%">
+                            <tbody><tr>
+                                <td class="aligncenter content-block">Questions? Email <a href="mailto:">support@turtletime.corp</a></td>
+                            </tr>
+                        </tbody></table>
+                        <div class="col-sm-10 aligncenter">
+                          <button id="newOrder" type="button" class="btn btn-primary">New Order</button>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+            
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> 
+  </body>
 </html>

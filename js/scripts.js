@@ -50,24 +50,19 @@ function handleZaOrder(e){
   document.getElementById("total-cost").innerText = ("$" + za.totalCost);
 
 
-
-   
   toppingsArray.forEach(element=> {
     const tbody = document.getElementById("toppingSelection");
     const tr = document.createElement("tr")
     tr.append(element);
     if ((element === "Marshmallows") || (element === "Pineapple")|| (element === "Chocolate")|| (element === "Olives")|| (element === "Jalapenos")){
       tbody.append(tr);
-      const td = document.createElement("td");
-      td.setAttribute("class","alignright")
-      td.append (" +$1")
-      tr.append(td);
+      tr.append (" $1")
+     
 
     }else if ((element === "Anchovies") || (element === "Pepperoni")|| (element === "Clams")|| (element === "Ham")|| (element === "Slime")){
       tbody.append(tr);
-      const td = document.createElement("td");
-      td.append (" +$2")
-      tr.append(td);
+      tr.append (" $2")
+      
     }
    
   })
@@ -78,7 +73,10 @@ function handleZaOrder(e){
 function handleNewOrder () {
   document.getElementById("pizza-form").removeAttribute("class", "hidden");
   document.querySelector("div#receipt").setAttribute("class", "hidden");
-}
+  document.getElementById("pizza-form").reset();
+  }
+
+
 
 window.addEventListener("load", function() {
   this.document.getElementById("newOrder").addEventListener("click", handleNewOrder);
