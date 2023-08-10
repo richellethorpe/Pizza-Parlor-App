@@ -1,5 +1,3 @@
-//Business logic
-
 function Pizza(size, toppings){
   this.toppings = toppings;
   this.size = size;
@@ -46,7 +44,6 @@ function handleZaOrder(e){
   let za = new Pizza(sizeSelection, toppingsArray);
   za.sizeCost();
   za.toppingCost();
- 
   document.getElementById("total-cost").innerText = ("$" + za.totalCost);
 
 
@@ -57,14 +54,11 @@ function handleZaOrder(e){
     if ((element === "Marshmallows") || (element === "Pineapple")|| (element === "Chocolate")|| (element === "Olives")|| (element === "Jalapenos")){
       tbody.append(tr);
       tr.append (" $1")
-     
 
     }else if ((element === "Anchovies") || (element === "Pepperoni")|| (element === "Clams")|| (element === "Ham")|| (element === "Slime")){
       tbody.append(tr);
       tr.append (" $2")
-      
     }
-   
   })
   document.getElementById("size-selection").innerText = sizeSelection;
 
